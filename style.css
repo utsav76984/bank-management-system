@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/* universal  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #888f9e, #030303);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Main Container */
+.container {
+    width: 100%;
+    max-width: 520px;
+    padding: 22px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    color: white;
+}
+
+/* Heading */
+.container h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    letter-spacing: 0.5px;
+}
+
+/* Card Design */
+.card {
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(8px);
+    padding: 18px;
+    border-radius: 16px;
+    margin-bottom: 18px;
+    text-align: left;
+    box-shadow: 0px 10px 22px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+/* Card Titles */
+.card h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #fff;
+}
+
+/* Inputs */
+input,
+select {
+    width: 100%;
+    padding: 12px 14px;
+    margin: 8px 0;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    font-size: 14px;
+    color: #111827;
+    background: rgba(255, 255, 255, 0.85);
+    transition: 0.3s;
+}
+
+input:focus,
+select:focus {
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.4);
+    transform: scale(1.02);
+}
+
+/* Normal Button */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+    color: white;
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+button:hover {
+    transform: translateY(-3px);
+    opacity: 0.95;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Buttons Grid */
+.btns {
+    display: grid;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+/* Deposit Button */
+.deposit {
+    background: linear-gradient(135deg, #22c55e, #15803d);
+}
+
+/* Withdraw Button */
+.withdraw {
+    background: linear-gradient(135deg, #ef4444, #b91c1c);
+}
+
+/* Balance Button */
+.balance {
+    background: linear-gradient(135deg, #fbbf24, #d97706);
+}
+
+/* Output Card */
+.output {
+    text-align: center;
+}
+
+.output p {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.25);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .container {
+        padding: 16px;
+    }
+
+    .container h1 {
+        font-size: 22px;
+    }
+
+    .card {
+        padding: 14px;
+    }
+}

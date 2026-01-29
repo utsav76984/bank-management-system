@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Bank System</title>
+    <!-- link css  -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>🏦 Bank Account</h1>
+        <!-- Create Account -->
+        <div class="card">
+            <h2>Create Account</h2>
+            <input type="text" id="name" placeholder="Enter your name" />
+            <input type="number" id="startBalance" placeholder="Enter starting balance" />
+            <select id="type">
+                <option value="">Select Account Type</option>
+                <option value="savings">Savings Account</option>
+                <option value="current">Current Account</option>
+            </select>
+
+            <button onclick="createAccount()">Create Account</button>
+        </div>
+        <!-- Operations -->
+        <div class="card">
+            <h2>Account Operations</h2>
+            <input type="number" id="amount" placeholder="Enter amount" />
+            <div class="btns">
+                <button class="deposit" onclick="depositMoney()">Deposit</button>
+                <button class="withdraw" onclick="withdrawMoney()">Withdraw</button>
+                <button class="balance" onclick="checkBalance()">Balance Inquiry</button>
+            </div>
+        </div>
+        <!-- Output -->
+        <div class="card output">
+            <h2>Output</h2>
+            <p id="result">Create an account to start...</p>
+        </div>
+    </div>
+    <!-- link js  -->
+    <script src="script.js"></script>
+</body>
+
+</html>
